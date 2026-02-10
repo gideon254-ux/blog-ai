@@ -2,7 +2,7 @@
 
 import { useEditor, EditorContent } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
-import Link from '@tiptap/extension-link'
+import LinkExtension from '@tiptap/extension-link'
 import Image from '@tiptap/extension-image'
 import Underline from '@tiptap/extension-underline'
 import Placeholder from '@tiptap/extension-placeholder'
@@ -64,7 +64,7 @@ export function EditorClient({ post }: EditorClientProps) {
   const editor = useEditor({
     extensions: [
       StarterKit,
-      Link.configure({
+      LinkExtension.configure({
         openOnClick: false,
       }),
       Image,
