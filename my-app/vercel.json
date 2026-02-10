@@ -1,0 +1,8 @@
+{
+  "crons": [
+    {
+      "path": "/api/crons/process-generation",
+      "schedule": "0 0 * * *"
+    }
+  ]
+}
